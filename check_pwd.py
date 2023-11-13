@@ -4,4 +4,10 @@
 # 12 November 2023
 
 def check_pwd(pwd):
-    return False
+
+    """ rule 1: Must be between 8 and 20 characters (inclusive) """
+    if len(pwd) < 8 or len(pwd) > 20:
+        return False
+
+    else:
+        return True
