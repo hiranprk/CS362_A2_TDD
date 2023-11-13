@@ -33,6 +33,13 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertEqual(check_pwd(input), expected)
 
+    def test4(self):
+        """no lowercase, correct length"""
+        input = "$1ASDFGHJ"
+        expected = False
+        self.assertEqual(check_pwd(input), expected)
+
+
 
 if __name__ == '__main__':
     unittest.main()
