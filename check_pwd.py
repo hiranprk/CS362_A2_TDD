@@ -4,4 +4,4 @@
 # 12 November 2023
 
 def check_pwd(pwd):
-    pass
+    return False
