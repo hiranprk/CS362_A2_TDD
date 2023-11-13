@@ -44,7 +44,7 @@ class TestCase(unittest.TestCase):
         input = "$1asdfgh"
         expected = False
         self.assertEqual(check_pwd(input), expected)
- 
+
     def test6(self):
         """no digit, correct length"""
         input = "$Asdfghj"
