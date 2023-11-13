@@ -21,6 +21,12 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertEqual(check_pwd(input), expected)
 
+    def test2(self):
+        """1 symbol, 1 digit, 1 upper, 1 lower"""
+        input = '$1Asdfgh'
+        expected = True
+        self.assertEqual(check_pwd(input), expected)
+
 
 if __name__ == '__main__':
     unittest.main()
