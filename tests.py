@@ -39,6 +39,11 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertEqual(check_pwd(input), expected)
 
+    def test5(self):
+        """no uppercase, correct length"""
+        input = "$1asdfgh"
+        expected = False
+        self.assertEqual(check_pwd(input), expected)
 
 
 if __name__ == '__main__':
