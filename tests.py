@@ -51,6 +51,12 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertEqual(check_pwd(input), expected)
 
+    def test7(self):
+        """no symbol, correct length"""
+        input = "A1sdfghj"
+        expected = False
+        self.assertEqual(check_pwd(input), expected)
+
 
 if __name__ == '__main__':
     unittest.main()
